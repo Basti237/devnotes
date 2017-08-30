@@ -1,12 +1,12 @@
 # Notizen zu git
 ## Konfiguration
 * Nutzername und E-Mail konfigurieren
-```
+```   
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
 * Proxy definieren (in .gitconfig)
-```
+```Makefile
 # HTTP Proxy
 [http]
 	proxy = <proxy_host>:<proxy_port>
@@ -15,7 +15,7 @@ $ git config --global user.email johndoe@example.com
 	proxy = <proxy_host>:<proxy_port>
 ```
 * Shortcuts definieren (in .gitconfig)
-```
+```Makefile
 # Einleiten der Shortcuts
 [alias]
 # Shortcut ohne Textausgabe
@@ -24,18 +24,18 @@ $ git config --global user.email johndoe@example.com
 	ste   = !echo = git status && git status
 ```
 * Definition von Farben (in .gitconfig)
-```
+```Makefile
 [color]
-  ui = true
+	ui = true
 [color "diff"]
-  #meta = yellow white
-  frag = magenta bold
-  #old = red bold
-  #new = green bold
+	#meta = yellow white
+	frag = magenta bold
+	#old = red bold
+	#new = green bold
 [color "status"]
-  #added = yellow
-  changed = red bold
-  untracked = yellow
+	#added = yellow
+	changed = red bold
+	untracked = yellow
 ```
 ## Arbeiten mit eigenem Branch
 * Branch auschecken
@@ -100,3 +100,20 @@ $ git pull
 /* Lokale Änderungen an Remote senden. */
 $ git push
 ```
+## Anzeige des Branchnamens und Autovervollständigung
+* Anzeige des Branchnamen in Konsole neben Verzeichnis
+ * [.git-prompt.sh](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) laden (darauf achten als `.git-prompt.sh` speichern)
+ * Datei anschließend neben die `.bashrc` legen
+ * In der `.bashrc` die folgenden Zeilen ergänzen
+   ```Makefile
+   source ~/.git-prompt.sh
+   export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]$(__git_ps1 " (%s)")\n\$ '
+   export GIT_PS1_SHOWDIRTYSTATE=true
+   ```
+* Autovervollständigung für git
+ * [.git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) laden (darauf achten als `.git-completion.bash` speichern)
+ * Datei anschließend neben die `.bashrc` legen
+ * In der `.bashrc` die folgenden Zeilen ergänzen
+   ```Makefile
+   source ~/.git-completion.bash
+   ```
