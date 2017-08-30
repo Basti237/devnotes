@@ -1,7 +1,7 @@
 # Notizen zu Maven
 
 ## Auflistung aller Module (inkl. Submodule) eines Projektes
-  * mvn org.qunix:structure-maven-plugin:modules
+  * ```mvn org.qunix:structure-maven-plugin:modules```
     * beispielhafte Auflistung:
     ```
 modul-parent
@@ -13,8 +13,8 @@ modul-parent
 
 ## Einzelnes Modul bauen
   * mvn clean install -pl :<module-name>
-    * z.B.  mvn clean install -pl :modul-submodul-konkret
+    * z.B.  ```mvn clean install -pl :modul-submodul-konkret```
 
 ## Ab einem bestimmten Modul bauen
   * mvn clean install -rf :<module-name>
-    * z.B.  mvn clean install -rf :modul-submodul-konkret
+    * z.B.  ```mvn clean install -rf :modul-submodul-konkret```
