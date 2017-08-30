@@ -5,6 +5,38 @@
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
+* Proxy definieren (in .gitconfig)
+```
+# HTTP Proxy
+[http]
+	proxy = <proxy_host>:<proxy_port>
+# HTTPS Proxy
+[https]
+	proxy = <proxy_host>:<proxy_port>
+```
+* Shortcuts definieren (in .gitconfig)
+```
+# Einleiten der Shortcuts
+[alias]
+# Shortcut ohne Textausgabe
+	st    = status
+# Shortcut mit Textausgabe
+	ste   = !echo = git status && git status
+```
+* Definition von Farben (in .gitconfig)
+```
+[color]
+  ui = true
+[color "diff"]
+  #meta = yellow white
+  frag = magenta bold
+  #old = red bold
+  #new = green bold
+[color "status"]
+  #added = yellow
+  changed = red bold
+  untracked = yellow
+```
 ## Arbeiten mit eigenem Branch
 * Branch auschecken
 ```
