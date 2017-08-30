@@ -3,13 +3,13 @@
 ## Auflistung aller Module (inkl. Submodule) eines Projektes
   * ```mvn org.qunix:structure-maven-plugin:modules```
     * beispielhafte Auflistung:
-    ```
-modul-parent
-|
-\__ modul-submodul-parent
-:       |
-:       |__ modul-submodul-konkret
-```
+      ```
+      modul-parent
+      |
+      \__ modul-submodul-parent
+      :       |
+      :       |__ modul-submodul-konkret
+      ```
 
 ## Einzelnes Modul bauen
   * mvn clean install -pl :<module-name>
