@@ -1,5 +1,3 @@
-[Home](/Spring)[Spring](/Spring)
-
 # Internationalisierung in Spring
 Um In Spring Anwendungen internationalisierte Ausgaben machen zu können, ist es zunächst notwendig, die folgenden zwei Konfigurationen vorzunehmen (in einer Config-Bean):
 ```java
