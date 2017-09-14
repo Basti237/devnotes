@@ -1,2 +1,4 @@
 # Notizen für Spring Anwendungen
-## CygWin
+## Inhaltsverzeichnis
+  *   [Internationalisierung](/Internationalisierung)
+  *   weiteres folgt
