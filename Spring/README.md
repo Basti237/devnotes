@@ -1,4 +1,4 @@
 # Notizen für Spring Anwendungen
 ## Inhaltsverzeichnis
-  *   [Internationalisierung](/Internationalisierung)
+  *   [Internationalisierung](/Spring/Internationalisierung)
   *   weiteres folgt
