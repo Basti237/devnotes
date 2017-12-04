@@ -1,5 +1,5 @@
 const THE_MOVIE_DB = {
-    apiKey: "4152886a2e740b05a059290a98741bf2",
+    apiKey: "<<ADD_YOUR_OWN>>",
     config: "https://api.themoviedb.org/3/configuration",
     movie: {
         search: "https://api.themoviedb.org/3/search/movie",
